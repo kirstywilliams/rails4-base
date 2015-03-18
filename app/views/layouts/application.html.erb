@@ -4,7 +4,6 @@
   <title><%= SITE_BASE_TITLE %> | <%= yield(:title) %></title>
   <!-- Meta -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="<%= SITE_KEYWORDS %>"/>
 	<meta name="description" content="<%= SITE_DESCRIPTION %>"/>
@@ -24,17 +23,17 @@
 	<meta name="application-name" content="<%= APP_NAME %>" /> 
 	<meta name="msapplication-TileColor" content="<%= BRAND_COLOR %>" /> 
 	<meta name="msapplication-TileImage" content="" />
-	<meta name="msapplication-square150x150logo" content="#{request.protocol}#{request.host_with_port}#{asset_path("branding/150x150/logo.png")}" />
-	<meta name="msapplication-square310x310logo" content="#{request.protocol}#{request.host_with_port}#{asset_path("branding/310x310/logo.png")}" />
-	<meta name="msapplication-square70x70logo" content="#{request.protocol}#{request.host_with_port}#{asset_path("branding/70x70/logo.png")}" />
-	<meta name="msapplication-wide310x150logo" content="#{request.protocol}#{request.host_with_port}#{asset_path("branding/310x150/logo.png")}" />
+	<meta name="msapplication-square150x150logo" content="<%= "#{request.protocol}#{request.host_with_port}#{asset_path("branding/150x150/logo.png")}" %>" />
+	<meta name="msapplication-square310x310logo" content="<%= "#{request.protocol}#{request.host_with_port}#{asset_path("branding/310x310/logo.png")}" %>" />
+	<meta name="msapplication-square70x70logo" content="<%= "#{request.protocol}#{request.host_with_port}#{asset_path("branding/70x70/logo.png")}" %>" />
+	<meta name="msapplication-wide310x150logo" content="<%= "#{request.protocol}#{request.host_with_port}#{asset_path("branding/310x150/logo.png")}" %>" />
 	
 	<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@<%= TWITTER_NAME %>" />
 	<meta name="twitter:title" content="<%= APP_NAME %>" />
 	<meta name="twitter:description" content="<%= SITE_DESCRIPTION %>" />
-	<meta name="twitter:image" content="#{request.protocol}#{request.host_with_port}#{asset_path("branding/opengraph.png")}" />
+	<meta name="twitter:image" content="<%= "#{request.protocol}#{request.host_with_port}#{asset_path("branding/opengraph.png")}" %>" />
 	
 	<!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
 	<meta property="og:title" content="<%= APP_NAME %>" />
@@ -42,7 +41,7 @@
 	<meta property="og:site_name" content="<%= APP_NAME %>" />
 	<meta property="og:description" content="<%= SITE_DESCRIPTION %>" />
 	<meta property="og:url" content="http://<%= SITE_DOMAIN %>" />
-	<meta property="og:image" content="#{request.protocol}#{request.host_with_port}#{asset_path("branding/opengraph.png")}" />
+	<meta property="og:image" content="<%= "#{request.protocol}#{request.host_with_port}#{asset_path("branding/opengraph.png")}" %>" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
@@ -50,7 +49,7 @@
 	<html itemscope itemtype="http://schema.org/Organization">
 	<meta itemprop="name" content="<%= APP_NAME %>" />
 	<meta itemprop="description" content="<%= SITE_DESCRIPTION %>" />
-	<meta itemprop="image" content="#{request.protocol}#{request.host_with_port}#{asset_path("branding/opengraph.png")}" />
+	<meta itemprop="image" content="<%= "#{request.protocol}#{request.host_with_port}#{asset_path("branding/opengraph.png")}" %>" />
 	
 	<%= favicon_link_tag 'favicon.ico' %>
 	
